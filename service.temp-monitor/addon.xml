@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="service.temp-monitor" name="CoreELEC Temperature Monitor" version="1.0.5" provider-name="i_Meshal">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <!-- background service starts on startup -->
+  <extension point="xbmc.service" start="startup" library="service.py" />
+  <!-- add a Program Add-on entry (launcher) -->
+  <extension point="xbmc.python.script" library="resources/lib/launcher.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="ar">مراقبة حرارة النظام وإرسال تنبيهات تيليجرام </summary>
+    <description lang="ar">خدمة تعمل في الخلفية على CoreELEC لإرسال تنبيهات الحرارة إلى تيليجرام  .</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+      <thumb>thumbnail.png</thumb>
+    </assets>
+  </extension>
+</addon>

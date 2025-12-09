@@ -1,0 +1,10 @@
+<settings>
+  <category label="إعدادات التنبيه">
+    <setting id="chat_id" type="number" label="Chat ID" default=""/>
+    <setting id="temp_threshold" type="number" label="حدّ الحرارة (°C)" default="52"/>
+    <setting id="daily_limit" type="number" label="الحد اليومي للتنبيهات" default="10"/>
+    <setting id="interval_secs" type="number" label="فاصل الفحص بالثواني" default="600"/>
+    <setting id="show_details" type="bool" label="إرفاق تفاصيل كل الحساسات" default="true"/>
+    <setting id="send_test" type="action" label="إرسال رسالة اختبار الآن" option="close" action="RunScript(special://home/addons/service.temp-monitor/resources/lib/send_test.py)"/>
+  </category>
+</settings>
